@@ -55,9 +55,10 @@ api.setNotFoundHandler(api.notFound);
 
 
 // Run the server!
+const API_PORT = 3000;
 const start = async () => {
   try {
-    await api.listen(3000);
+    await api.listen(API_PORT);
     api.log.info(`server listening on ${api.server.address().port}`);
   } catch (err) {
     api.log.error(err);
