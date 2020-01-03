@@ -1,5 +1,5 @@
 const api = require("fastify")({ logger: false });
-const { parseStream } = require("./rewriter");
+const parseStream = require("./src/parseStream");
 
 // Since we don't need to persist data between server restarts, we can simply
 // utilize Javascript object as our key-store "database"
