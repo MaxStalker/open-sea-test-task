@@ -16,4 +16,4 @@ class Rewriter extends RewritingStream {
   }
 }
 
-module.extends = Rewriter;
+module.exports = Rewriter;
