@@ -1,0 +1,26 @@
+{
+  "name": "open-sea-back-end-test-task",
+  "version": "1.0.0",
+  "description": " Test task for back-end position at OpenSea",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install",
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "opensea",
+    "challenge"
+  ],
+  "author": "Max Daunarovich",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.11.0",
+    "parse5": "^5.1.1",
+    "parse5-html-rewriting-stream": "^5.1.1",
+    "parse5-serializer-stream": "^5.1.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
