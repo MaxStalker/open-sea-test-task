@@ -24,7 +24,7 @@ module.exports = (str, db) => {
 
   htmlStream.on("endTag", node => {
     if (node.tagName === "a") {
-      insideLink = true;
+      insideLink = false;
     }
     htmlStream.emitEndTag(node);
   });

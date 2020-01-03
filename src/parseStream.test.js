@@ -101,6 +101,19 @@ test("single name in a longer string", async () => {
   const response = await readableToString(parseStream(fragment, db));
   expect(response).toBe(correctAnswer);
 });
+test("single name with closer end tag", async () => {
+  const db = {
+    names: {
+      alex: {
+        url: "http://alex.com"
+      }
+    }
+  };
+  const fragment = `<a href="http://foo.com">alex is already linked</a>, but alex is not`;
+  const correctAnswer = `<a href="http://foo.com">alex is already linked</a>, but <a href="http://alex.com">alex</a> is not`;
+  const response = await readableToString(parseStream(fragment, db));
+  expect(response).toBe(correctAnswer);
+});
 test("many names in a longer string", async () => {
   const db = {
     names: {
