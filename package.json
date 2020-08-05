@@ -15,7 +15,7 @@
   "author": "Max Daunarovich",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^2.11.0",
+    "fastify": "^2.15.1",
     "parse5": "^5.1.1",
     "parse5-html-rewriting-stream": "^5.1.1",
     "parse5-serializer-stream": "^5.1.1"
